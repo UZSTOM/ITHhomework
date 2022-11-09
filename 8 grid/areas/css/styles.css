@@ -67,16 +67,16 @@
 				background: #ffff00;
 				grid-template-areas: 
 				"A B C"
-           		"D D E"
-    			"D D F"
-    			"G G F"
-   			    "G G H"
-   		        "I L L"
-   			    "I N M"
-   			    "O O P"
-   			    "R V P"
-   			    "U V P";
-			}
+           		        "D D E"
+    			        "D D F"
+    			        "G G F"
+   			        "G G H"
+   		                "I L L"
+   			        "I N M"
+   			        "O O P"
+   			        "R V P"
+   			        "U V P";
+			        }
 
 
 		
