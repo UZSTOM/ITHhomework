@@ -1,0 +1,204 @@
+			    html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+
+
+  			
+			html,body{
+				scroll-behavior: smooth;
+			}
+
+
+  			body{
+  				background:  #23eef1;
+  				color:  #0932FE;
+  			}
+			
+			.wrapper{ 
+				width:1200px;
+				margin: 90px auto;
+				}
+
+
+
+			.grid_area_zone{
+				display: grid;
+				background: #ffff00;
+				grid-template-areas: 
+				"A B C"
+           		"D D E"
+    			"D D F"
+    			"G G F"
+   			    "G G H"
+   		        "I L L"
+   			    "I N M"
+   			    "O O P"
+   			    "R V P"
+   			    "U V P";
+			}
+
+
+		
+			.area_1{
+    			grid-area: A;
+    			outline: 2px solid red;
+			}
+
+
+			.area_2{
+    			grid-area: B;
+   				 outline: 2px solid red;
+			}
+
+
+			.area_3{
+    			grid-area: C;
+    			outline: 2px solid red;
+			}
+
+
+			.area_4{
+    			grid-area: D;
+    			outline: 2px solid red;
+			}
+
+
+			.area_5{
+    			grid-area: E;
+    			outline: 2px solid red;
+			}
+
+
+			.area_6{
+    			grid-area: F;
+    			outline: 2px solid red;
+			}
+
+
+			.area_7{
+    			grid-area: G;
+    			outline: 2px solid red;
+			}
+
+
+			.area_8{
+    			grid-area: H;
+    			outline: 2px solid red;
+			}
+
+
+			.area_9{
+    			grid-area: I;
+    			outline: 2px solid red;
+			}
+
+
+			.area_10{
+    			grid-area: L;
+    			outline: 2px solid red;
+			}
+
+
+			.area_11{
+    			grid-area: N;
+    			outline: 2px solid red;
+			}
+
+
+			.area_12{
+    			grid-area: M;
+    			outline: 2px solid red;
+			}
+
+
+			.area_13{
+    			grid-area: E;
+    			outline: 2px solid red;
+			}
+
+
+			.area_14{
+    			grid-area: O;
+    			outline: 2px solid red;
+			}
+
+
+			.area_15{
+    			grid-area: P;
+    			outline: 2px solid red;
+			}
+
+
+			.area_16{
+    			grid-area: U;
+    			outline: 2px solid red;
+			}
+
+
+			.area_17{
+    			grid-area:V;
+    			outline: 2px solid red;
+			}
+
+
+
+
+		
+			
+
+				
+				
+
+				
+
+
+
+
+				
+				
+
+			
+
+
+
