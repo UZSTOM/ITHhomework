@@ -1,0 +1,428 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image: url("../images/yoga.png");
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrapper{ 
+text-align: justify;
+padding: 0;
+margin: 0 auto;
+outline: none;
+position: relative;
+width: 1200px;
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+	font-size: 35px;
+	text-shadow: 6px 9px 7px rgba(0,0,0,0.57);
+	font-weight: bolder;
+	color: #64823e;
+}
+
+.description{
+border: 3px dotted #707945;
+font-size: 26px;
+padding: 17px 24px;
+margin-top: 14px;
+text-align: center;
+}
+			
+nav{
+background: #69723e;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+border: 2px ridge;
+outline: none;
+}
+
+nav ul{
+padding: 0;
+margin: 0;
+text-align: center;
+font-size: 0;
+display: block;
+}
+
+nav ul li{
+display: inline-block;
+background-color: #69723e;
+font-size: 20px;
+position: relative;
+padding: 0px 10px;
+}
+
+nav ul li:hover{
+background-color: skyblue;
+}
+
+nav ul li a{
+display: inline-block;
+position: relative;
+padding: 10px 5px 6px 35px;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+nav ul li{
+padding-left: 30px;
+} 
+
+nav ul li+li+li{
+padding-left: 0px;
+} 
+
+nav ul li:nth-child(3){
+padding-right: 40px;
+} 
+
+nav ul li:nth-child(5){
+padding-left: 37px;
+}
+
+nav ul ul{
+position: absolute;
+visibility: hidden;
+opacity: 0;
+transition: all 0.4s linear;
+padding: 0;
+width: 100%;
+z-index: 1;
+}
+
+nav ul li:hover ul{
+visibility: visible;
+transition: all .5s ease-in-out;
+opacity: 1;
+}
+
+nav ul li ul li{
+margin: 0;
+padding: 10px 0;
+border: none;
+display: block;
+}
+
+nav ul ul.flexini{
+position: absolute;
+top: 0px;
+left: 100%;
+overflow: hidden;
+width: 0;
+}
+
+nav ul ul.gridini{
+position: absolute;
+top: 0;
+right: 100%; 
+overflow: hidden;
+width: 0px;
+}
+
+nav ul ul li:hover ul.flexini{
+width: 100%;
+transition: all .5s ease-out;
+}
+
+nav ul ul li:hover ul.gridini{
+width: 100%;
+transition: all .5s ease-out;
+}
+
+nav ul li::before{
+content: "";
+background: url("../images/sprites.png");
+width:35px;
+height:35px;
+display: block;
+background-position: -60px -60px;
+position: absolute;
+top: 0;
+left: 42px;
+vertical-align: middle;
+transform: perspective(1px) translateZ(0);
+}
+
+nav ul li+li::before{
+content: "";
+background-position: -115px -45px;
+}
+
+nav ul li+li+li::before{
+content: "";
+background-position: -115px -5px;
+left:auto;
+right: 15px;
+} 
+
+nav ul li+li+li:hover::before{
+content: "";
+background-position: -155px -45px;
+}  
+
+nav ul li ul li::before{
+content: "";
+background: none;
+}
+
+nav ul li ul li:nth-child(4)::before{
+content: "";
+background: url("../images/sprites.png");
+background-position: -155px -5px;
+left: auto;
+right: 20px;
+top: 5px;
+}
+
+nav ul li ul li:nth-child(4):hover::before{
+content: "";
+background-position: -45px -115px;
+}  
+
+nav ul li ul li:nth-child(5)::before{
+content: "";
+background: url("../images/sprites.png");
+width: 35px;
+height: 35px;
+display: block;
+background-position: -45px -115px;
+top: 5px;
+left: 15px;
+}
+
+nav ul li ul li:nth-child(5):hover::before{
+content: "";
+background-position: -155px -5px;
+}  
+
+nav ul li ul li:nth-child(5) a{
+	padding: 11px 45px 5px 0px;
+	font-size: 15px;
+}
+
+nav ul li ul li:nth-child(4) a{
+	padding: 11px 35px 5px 20px;
+	font-size: 15px;
+}
+
+nav ul li ul li:nth-child(-n+3) a{
+	padding: 11px 35px 5px 20px;
+	font-size: 15px;
+	left: 20px;
+}
+
+nav ul li ul li:nth-child(-n+1) a{
+	padding: 11px 35px 5px 20px;
+	font-size: 15px;
+	left: 10px;
+}
+			
+
+
+
+/* Social Sprites*/			
+
+
+.social_menu{
+background-color: cornsilk;
+}
+
+.m_social{
+position: fixed;
+top: 90%;
+right: 1%;
+}
+
+.m_social li{
+display: inline-block;
+position: relative;
+font-size: 25px;
+}
+
+.m_social li a{
+width: 45px;
+height: 45px;
+background: purple;
+display: block;
+font-size: 40px;
+background: url(../images/sprites.png);
+}
+
+.m_social a:hover{
+animation-name: hvr-buzz;
+animation-duration: 0.25s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+
+.m_social li a{
+background-position: -5px -5px;
+}
+
+.m_social li+li a{
+background-position: -60px -5px;
+}
+
+.m_social li+li+li a{
+background-position: -5px -60px;
+}
+
+
+/*Programa trenirovok*/
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.abonement{
+position: fixed;
+right: 0px;
+top: 55%;
+margin-top: -165px;
+background: #DDA0DD;
+font-size: 30px;
+padding: 5px;
+display: flex;
+color: rgb(66, 54, 199);
+transition: all 1s linear;
+background: rgba(210, 118, 226, 0.425);
+width: 60px;
+box-shadow: 0 0 0 0 rgba(10, 10, 0, 1);
+transform: scale(1);
+animation: pulse 2s infinite;
+}
+
+.abonement:hover{
+width: 250px;
+background: #DDA0DD;
+opacity: 0.9;
+transform: rotate(180deg) scale(1.2);
+transition-timing-function: ease-in-out 2s;
+transition-delay: .5s;
+animation-play-state: paused;
+}
+
+h4{
+text-transform: uppercase;
+outline: 2px solid orangered;
+transform: rotateZ(180deg);
+font-weight: 700;
+writing-mode: vertical-lr;
+margin: 0 50px 0 0;
+padding: 15px;
+display: block;
+text-align: center;
+}
+
+.abonement ul{
+display: flex;
+flex-direction: column;
+height: 15px;
+width: 110px;
+transform: rotate(0deg);
+margin-top: 17px;
+margin-right: auto;
+}
+
+.abonement ul li{
+padding: 5px 15px 1px 1px;
+margin: 5px -25px;
+background: yellow;
+height: 40px;
+}
+
+@keyframes hvr-buzz{
+50%{
+transform: translateX(3px) rotate(2deg);
+}
+100% {
+transform: translateX(-3px) rotate(-2deg);
+}
+}
+
+.abonement ul li:hover{
+animation-name: hvr-buzz;
+animation-duration: 0.15s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.abonement ul li a{
+text-decoration: none;
+font-size: 35px;
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
